@@ -5,4 +5,4 @@ build:
     trunk build --release
 
 dev:
-    trunk serve
+    cargo watch -w src -s 'trunk serve'

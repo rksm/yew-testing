@@ -29,10 +29,12 @@
             packages = with pkgs; [
               # nodePackages.typescript-language-server
               # nodejs_22
+              wasm-bindgen-cli
               f
               trunk
               rust-analyzer
               rustfmt
+              cargo-watch
             ];
 
             LIBCLANG_PATH = "${pkgs.llvmPackages.libclang.lib}/lib";
